@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Speed_Reader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6iB-xP-BIQ">
+                                <rect key="frame" x="20" y="120" width="374" height="279"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2E-VX-2gC">
+                                <rect key="frame" x="20" y="419" width="374" height="58"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
+                                <color key="tintColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="7" minY="5" maxX="5" maxY="5"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="9"/>
+                                <state key="normal" title=" lets read..." image="play.fill" catalog="system">
+                                    <color key="titleColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kdH-zg-J4J" kind="show" id="6vi-Hx-uH2"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="450" minValue="100" maxValue="800" translatesAutoresizingMaskIntoConstraints="NO" id="gpw-rF-Pjd">
+                                <rect key="frame" x="18" y="497" width="378" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.99215686270000003" green="0.50588235290000005" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="wpmSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="iBY-HG-tpr"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="450wpm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyZ-f8-eJb">
+                                <rect key="frame" x="20" y="547" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed Reader" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4b-Ur-Kis">
+                                <rect key="frame" x="20" y="64" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“Fill your house with stacks of books, in all the crannies and all the nooks.” – Dr. Seuss" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96e-qf-Jh5">
+                                <rect key="frame" x="20" y="803.5" width="374" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                <color key="textColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.50588235294117645" blue="0.45490196078431372" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="96e-qf-Jh5" secondAttribute="trailing" constant="20" id="4iJ-3f-02b"/>
+                            <constraint firstItem="r4b-Ur-Kis" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="5Zw-An-pA3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oyZ-f8-eJb" secondAttribute="trailing" constant="20" id="7cg-fP-4TQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F2E-VX-2gC" secondAttribute="trailing" constant="20" id="ALm-me-DPR"/>
+                            <constraint firstItem="gpw-rF-Pjd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BEa-cu-7be"/>
+                            <constraint firstItem="gpw-rF-Pjd" firstAttribute="top" secondItem="F2E-VX-2gC" secondAttribute="bottom" constant="20" id="BK3-tO-rBv"/>
+                            <constraint firstItem="96e-qf-Jh5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="IGH-bf-Ogg"/>
+                            <constraint firstItem="oyZ-f8-eJb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LGS-j6-n0T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r4b-Ur-Kis" secondAttribute="trailing" constant="20" id="OJi-vX-sGl"/>
+                            <constraint firstItem="6iB-xP-BIQ" firstAttribute="top" secondItem="r4b-Ur-Kis" secondAttribute="bottom" constant="20" id="PTs-8Q-SLV"/>
+                            <constraint firstItem="oyZ-f8-eJb" firstAttribute="top" secondItem="gpw-rF-Pjd" secondAttribute="bottom" constant="20" id="S2Q-Jc-dMr"/>
+                            <constraint firstItem="F2E-VX-2gC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Tdg-Pr-Uhz"/>
+                            <constraint firstItem="F2E-VX-2gC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WjT-Sw-XBS"/>
+                            <constraint firstItem="6iB-xP-BIQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ylg-BY-wHh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6iB-xP-BIQ" secondAttribute="trailing" constant="20" id="dUT-FQ-tfM"/>
+                            <constraint firstItem="96e-qf-Jh5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="exf-eo-h0S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="96e-qf-Jh5" secondAttribute="bottom" constant="20" id="fdo-bM-k3H"/>
+                            <constraint firstItem="F2E-VX-2gC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pLc-ol-xYu"/>
+                            <constraint firstItem="F2E-VX-2gC" firstAttribute="top" secondItem="6iB-xP-BIQ" secondAttribute="bottom" constant="20" id="pkU-0j-YZ7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gpw-rF-Pjd" secondAttribute="trailing" constant="20" id="qZG-70-SzP"/>
+                            <constraint firstItem="r4b-Ur-Kis" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="t7T-TO-UaV"/>
+                            <constraint firstItem="oyZ-f8-eJb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="x33-Xc-qvK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iNT-wk-y70"/>
+                    <connections>
+                        <outlet property="readyButton" destination="F2E-VX-2gC" id="a8f-rU-wsM"/>
+                        <outlet property="textToSpeedRead" destination="6iB-xP-BIQ" id="2A3-xo-1dh"/>
+                        <outlet property="wpmSlider" destination="gpw-rF-Pjd" id="6Yd-7q-zs2"/>
+                        <outlet property="wpmSliderLabel" destination="oyZ-f8-eJb" id="Gy9-vh-1Il"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+        <!--Reader View Controller-->
+        <scene sceneID="rst-yJ-4FF">
+            <objects>
+                <viewController storyboardIdentifier="ReaderViewController" id="kdH-zg-J4J" customClass="ReaderViewController" customModule="Speed_Reader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3mp-Ie-0PI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hi-gX-JNa">
+                                <rect key="frame" x="139.5" y="397" width="135" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <color key="textColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgt-qA-Glj">
+                                <rect key="frame" x="144" y="465" width="126" height="58"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                <color key="tintColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="7" minY="5" maxX="5" maxY="5"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="9"/>
+                                <state key="normal" title=" done" image="arrowshape.turn.up.left.fill" catalog="system">
+                                    <color key="titleColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButtonTapped:" destination="kdH-zg-J4J" eventType="touchUpInside" id="di0-Ye-cS5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.50588235290000005" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0hi-gX-JNa" firstAttribute="centerX" secondItem="3mp-Ie-0PI" secondAttribute="centerX" id="2s4-RY-Ozs"/>
+                            <constraint firstItem="Kgt-qA-Glj" firstAttribute="centerX" secondItem="3mp-Ie-0PI" secondAttribute="centerX" id="Oh1-LL-JgI"/>
+                            <constraint firstItem="0hi-gX-JNa" firstAttribute="centerY" secondItem="3mp-Ie-0PI" secondAttribute="centerY" id="pBt-Vr-i1y"/>
+                            <constraint firstItem="Kgt-qA-Glj" firstAttribute="top" secondItem="0hi-gX-JNa" secondAttribute="bottom" constant="20" id="wNb-UY-nbT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iXE-wW-fcQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dBs-iS-2Pg"/>
+                    <connections>
+                        <outlet property="doneButton" destination="Kgt-qA-Glj" id="utc-7H-PR1"/>
+                        <outlet property="readingText" destination="0hi-gX-JNa" id="RUS-BO-Kto"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="64b-mF-8Cb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.turn.up.left.fill" catalog="system" width="64" height="52"/>
+        <image name="play.fill" catalog="system" width="58" height="64"/>
+    </resources>
+</document>
