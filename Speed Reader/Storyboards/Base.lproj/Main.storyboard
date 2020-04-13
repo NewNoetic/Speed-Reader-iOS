@@ -16,28 +16,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6iB-xP-BIQ">
-                                <rect key="frame" x="20" y="120" width="374" height="279"/>
+                                <rect key="frame" x="20" y="120" width="374" height="231.5"/>
                                 <color key="backgroundColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2E-VX-2gC">
-                                <rect key="frame" x="20" y="419" width="374" height="58"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
-                                <color key="tintColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
-                                <inset key="contentEdgeInsets" minX="7" minY="5" maxX="5" maxY="5"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="9"/>
-                                <state key="normal" title=" lets read..." image="play.fill" catalog="system">
-                                    <color key="titleColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2E-VX-2gC">
+                                <rect key="frame" x="139.5" y="423.5" width="135" height="49"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                                <color key="tintColor" red="0.99215686270000003" green="0.50588235290000005" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="25" minY="10" maxX="25" maxY="10"/>
+                                <state key="normal" title=" Read" image="eyeglasses" catalog="system">
+                                    <color key="titleColor" red="0.99215686270000003" green="0.50588235290000005" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.99215686270000003" green="0.50588235290000005" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="kdH-zg-J4J" kind="show" id="6vi-Hx-uH2"/>
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="450" minValue="100" maxValue="800" translatesAutoresizingMaskIntoConstraints="NO" id="gpw-rF-Pjd">
-                                <rect key="frame" x="18" y="497" width="378" height="31"/>
+                                <rect key="frame" x="18" y="492.5" width="378" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="maximumTrackTintColor" red="0.99215686270000003" green="0.50588235290000005" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -45,7 +45,7 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="450wpm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyZ-f8-eJb">
-                                <rect key="frame" x="20" y="547" width="374" height="21"/>
+                                <rect key="frame" x="173.5" y="542.5" width="67.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -57,36 +57,68 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“Fill your house with stacks of books, in all the crannies and all the nooks.” – Dr. Seuss" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96e-qf-Jh5">
-                                <rect key="frame" x="20" y="803.5" width="374" height="38.5"/>
+                                <rect key="frame" x="10" y="803.5" width="394.5" height="38.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <color key="textColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thj-nu-Vk3" userLabel="Clear">
+                                <rect key="frame" x="20" y="372.5" width="32" height="29.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="InI-Bd-npm"/>
+                                    <constraint firstAttribute="height" constant="32" id="yUp-x9-Tsc"/>
+                                </constraints>
+                                <color key="tintColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="clear.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="clearButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="paj-JF-MmY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eO-0M-qjO" userLabel="Paste">
+                                <rect key="frame" x="72" y="369.5" width="32" height="35.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="FdJ-yh-eFT"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="YfI-Gd-JZb"/>
+                                    <constraint firstAttribute="width" constant="32" id="aDn-aN-0ge"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="nyV-x3-fyz"/>
+                                </constraints>
+                                <color key="tintColor" red="0.2470588235" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="doc.on.clipboard.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="clearButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NIH-3v-c41"/>
+                                    <action selector="pasteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xce-Vn-1OC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99215686274509807" green="0.50588235294117645" blue="0.45490196078431372" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="96e-qf-Jh5" secondAttribute="trailing" constant="20" id="4iJ-3f-02b"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="96e-qf-Jh5" secondAttribute="trailing" id="4iJ-3f-02b"/>
                             <constraint firstItem="r4b-Ur-Kis" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="5Zw-An-pA3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oyZ-f8-eJb" secondAttribute="trailing" constant="20" id="7cg-fP-4TQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F2E-VX-2gC" secondAttribute="trailing" constant="20" id="ALm-me-DPR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oyZ-f8-eJb" secondAttribute="trailing" id="7cg-fP-4TQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="F2E-VX-2gC" secondAttribute="trailing" id="ALm-me-DPR"/>
                             <constraint firstItem="gpw-rF-Pjd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BEa-cu-7be"/>
                             <constraint firstItem="gpw-rF-Pjd" firstAttribute="top" secondItem="F2E-VX-2gC" secondAttribute="bottom" constant="20" id="BK3-tO-rBv"/>
-                            <constraint firstItem="96e-qf-Jh5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="IGH-bf-Ogg"/>
+                            <constraint firstItem="5eO-0M-qjO" firstAttribute="top" secondItem="6iB-xP-BIQ" secondAttribute="bottom" constant="20" id="GkO-8I-0jl"/>
+                            <constraint firstItem="96e-qf-Jh5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IGH-bf-Ogg"/>
                             <constraint firstItem="oyZ-f8-eJb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LGS-j6-n0T"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r4b-Ur-Kis" secondAttribute="trailing" constant="20" id="OJi-vX-sGl"/>
+                            <constraint firstItem="thj-nu-Vk3" firstAttribute="leading" secondItem="gpw-rF-Pjd" secondAttribute="leading" id="Ova-ji-04Z"/>
                             <constraint firstItem="6iB-xP-BIQ" firstAttribute="top" secondItem="r4b-Ur-Kis" secondAttribute="bottom" constant="20" id="PTs-8Q-SLV"/>
                             <constraint firstItem="oyZ-f8-eJb" firstAttribute="top" secondItem="gpw-rF-Pjd" secondAttribute="bottom" constant="20" id="S2Q-Jc-dMr"/>
-                            <constraint firstItem="F2E-VX-2gC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Tdg-Pr-Uhz"/>
+                            <constraint firstItem="F2E-VX-2gC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tdg-Pr-Uhz"/>
                             <constraint firstItem="F2E-VX-2gC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WjT-Sw-XBS"/>
                             <constraint firstItem="6iB-xP-BIQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ylg-BY-wHh"/>
+                            <constraint firstItem="F2E-VX-2gC" firstAttribute="top" secondItem="5eO-0M-qjO" secondAttribute="bottom" constant="20" id="Z3z-Od-Chk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6iB-xP-BIQ" secondAttribute="trailing" constant="20" id="dUT-FQ-tfM"/>
                             <constraint firstItem="96e-qf-Jh5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="exf-eo-h0S"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="96e-qf-Jh5" secondAttribute="bottom" constant="20" id="fdo-bM-k3H"/>
+                            <constraint firstItem="thj-nu-Vk3" firstAttribute="top" secondItem="6iB-xP-BIQ" secondAttribute="bottom" constant="20" id="kMf-xa-zCQ"/>
                             <constraint firstItem="F2E-VX-2gC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pLc-ol-xYu"/>
-                            <constraint firstItem="F2E-VX-2gC" firstAttribute="top" secondItem="6iB-xP-BIQ" secondAttribute="bottom" constant="20" id="pkU-0j-YZ7"/>
+                            <constraint firstItem="5eO-0M-qjO" firstAttribute="leading" secondItem="thj-nu-Vk3" secondAttribute="trailing" constant="20" id="qRz-I3-zW7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gpw-rF-Pjd" secondAttribute="trailing" constant="20" id="qZG-70-SzP"/>
                             <constraint firstItem="r4b-Ur-Kis" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="t7T-TO-UaV"/>
-                            <constraint firstItem="oyZ-f8-eJb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="x33-Xc-qvK"/>
+                            <constraint firstItem="F2E-VX-2gC" firstAttribute="top" secondItem="thj-nu-Vk3" secondAttribute="bottom" constant="20" id="v6C-nD-mAz"/>
+                            <constraint firstItem="oyZ-f8-eJb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x33-Xc-qvK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -153,6 +185,8 @@
     </scenes>
     <resources>
         <image name="arrowshape.turn.up.left.fill" catalog="system" width="64" height="52"/>
-        <image name="play.fill" catalog="system" width="58" height="64"/>
+        <image name="clear.fill" catalog="system" width="64" height="56"/>
+        <image name="doc.on.clipboard.fill" catalog="system" width="58" height="64"/>
+        <image name="eyeglasses" catalog="system" width="64" height="26"/>
     </resources>
 </document>

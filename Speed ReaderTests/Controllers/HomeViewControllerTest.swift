@@ -18,6 +18,39 @@ class HomeViewControllerTest: XCTestCase {
         XCTAssertEqual(homeViewController.wpm, 450.0)
     }
     
+    // MARK - Read button styling tests
+    
+    func testReadyButton_CornerRadius_Is10() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        homeViewController.loadView()
+        
+        homeViewController.applyReadyButtonStyles()
+        
+        XCTAssertEqual(homeViewController.readyButton.layer.cornerRadius, 10)
+    }
+    
+    func testReadyButton_BorderWidth_Is11() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        homeViewController.loadView()
+        
+        homeViewController.applyReadyButtonStyles()
+        
+    XCTAssertEqual(homeViewController.readyButton.layer.borderWidth, 1.0)
+    }
+    
+    func testReadyButton_ClipToBounds_IsTrue() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        homeViewController.loadView()
+        
+        homeViewController.applyReadyButtonStyles()
+        
+        XCTAssertTrue(homeViewController.readyButton.clipsToBounds)
+    }
+    
+    
     // MARK - Text Field Styling Tests
     
     func testTextToSpeedRead_CornerRadius_Is10() {
@@ -159,5 +192,17 @@ class HomeViewControllerTest: XCTestCase {
         
         XCTAssertEqual(readerViewController.wpm, 300.0)
         XCTAssertEqual(readerViewController.textToRead, "Segue")
+    }
+    
+    // MARK - helper buttons
+    
+    func testClearButtonTapped_ClearsTextToRead(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        homeViewController.loadView()
+
+        homeViewController.clearButtonTapped((Any).self)
+    
+        XCTAssertEqual(homeViewController.textToSpeedRead.text, "")
     }
 }
