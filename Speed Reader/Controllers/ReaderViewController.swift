@@ -7,7 +7,7 @@ class ReaderViewController: UIViewController {
     var wpm: Float = 450.0;
     var textToRead = ""
     var timer: Timer.Type = Timer.self
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         beginCountdown()
@@ -34,12 +34,15 @@ class ReaderViewController: UIViewController {
     
     func read(){
         let data = textToRead.split(separator: " ")
+        let wordsInterval = calculateIntervalBetweenWordsInSeconds(wordsPerMin: self.wpm)
+        
         var index = 0
 
-        timer.scheduledTimer(withTimeInterval: calculateIntervalBetweenWordsInSeconds(wordsPerMin: self.wpm), repeats: true) { timer in
+        timer.scheduledTimer(withTimeInterval: wordsInterval, repeats: true) { timer in
             if(index == data.count){
                 timer.invalidate()
-                self.readingText.text = "You read " + String(data.count) + " words"
+                self.readingText.text = "You read " + String(data.count) + " words at " + String(format: "%gwpm", self.wpm) + "!"
+                self.readingText.font = self.readingText.font.withSize(14)
                 self.doneButton.isHidden = false
                 return
             }

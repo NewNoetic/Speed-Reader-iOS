@@ -20,26 +20,6 @@ class HomeViewControllerTest: XCTestCase {
     
     // MARK - Read button styling tests
     
-    func testReadyButton_CornerRadius_Is10() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        homeViewController.loadView()
-        
-        homeViewController.applyReadyButtonStyles()
-        
-        XCTAssertEqual(homeViewController.readyButton.layer.cornerRadius, 10)
-    }
-    
-    func testReadyButton_BorderWidth_Is11() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        homeViewController.loadView()
-        
-        homeViewController.applyReadyButtonStyles()
-        
-    XCTAssertEqual(homeViewController.readyButton.layer.borderWidth, 1.0)
-    }
-    
     func testReadyButton_ClipToBounds_IsTrue() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
@@ -53,16 +33,6 @@ class HomeViewControllerTest: XCTestCase {
     
     // MARK - Text Field Styling Tests
     
-    func testTextToSpeedRead_CornerRadius_Is10() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        homeViewController.loadView()
-        
-        homeViewController.applyTextFieldStyles()
-
-        XCTAssertEqual(homeViewController.textToSpeedRead.layer.cornerRadius, 10)
-    }
-    
     func testTextToSpeedRead_ClipToBounds_IsTrue() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
@@ -71,26 +41,6 @@ class HomeViewControllerTest: XCTestCase {
         homeViewController.applyTextFieldStyles()
 
         XCTAssertTrue(homeViewController.textToSpeedRead.clipsToBounds)
-    }
-    
-    func testTextToSpeedRead_BorderWidth_Is1() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        homeViewController.loadView()
-        
-        homeViewController.applyTextFieldStyles()
-
-        XCTAssertEqual(homeViewController.textToSpeedRead.layer.borderWidth, 1)
-    }
-    
-    func testTextToSpeedRead_BorderColor_IsCorrect() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        homeViewController.loadView()
-        
-        homeViewController.applyTextFieldStyles()
-
-        XCTAssertEqual(homeViewController.textToSpeedRead.layer.borderColor, UIColor(red:0.23, green:0.17, blue:0.26, alpha:1.00).cgColor)
     }
     
     func testTextToSpeedRead_Text_IsCorrect() {

@@ -141,6 +141,7 @@ class ReaderViewControllerTests: XCTestCase {
 
         readerViewController.attachCustomerTimer(timer: MockTimer.self)
         readerViewController.textToRead = textToRead
+        readerViewController.wpm = 300
         
         readerViewController.read()
         
@@ -148,7 +149,7 @@ class ReaderViewControllerTests: XCTestCase {
         MockTimer.currentTimer.fire()
         MockTimer.currentTimer.fire()
 
-        XCTAssertEqual(readerViewController.readingText!.text, "You read " + String(textToRead.split(separator: " ").count) + " words")
+        XCTAssertEqual(readerViewController.readingText!.text, "You read " + String(textToRead.split(separator: " ").count) + " words at 300wpm!")
     }
     
     func testReadingSequence_DisplaysDoneButton_WhenReadingFinished() {

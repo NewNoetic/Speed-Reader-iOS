@@ -12,6 +12,12 @@
 		EE1A6F4F244398FF00C3A946 /* ReaderViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1A6F4E244398FF00C3A946 /* ReaderViewControllerTest.swift */; };
 		EE1A6F522443A11600C3A946 /* MockTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1A6F512443A11600C3A946 /* MockTimer.swift */; };
 		EE1A6F542443B7C800C3A946 /* HomeViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1A6F532443B7C800C3A946 /* HomeViewControllerTest.swift */; };
+		EEA405FF2445B48000EC18D0 /* Bitter-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA405FC2445B48000EC18D0 /* Bitter-Italic.ttf */; };
+		EEA406002445B48000EC18D0 /* Bitter-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA405FC2445B48000EC18D0 /* Bitter-Italic.ttf */; };
+		EEA406012445B48000EC18D0 /* Bitter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA405FD2445B48000EC18D0 /* Bitter-Bold.ttf */; };
+		EEA406022445B48000EC18D0 /* Bitter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA405FD2445B48000EC18D0 /* Bitter-Bold.ttf */; };
+		EEA406032445B48000EC18D0 /* Bitter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA405FE2445B48000EC18D0 /* Bitter-Regular.ttf */; };
+		EEA406042445B48000EC18D0 /* Bitter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA405FE2445B48000EC18D0 /* Bitter-Regular.ttf */; };
 		EED391FD244344A400A00077 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED391FC244344A400A00077 /* AppDelegate.swift */; };
 		EED391FF244344A400A00077 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED391FE244344A400A00077 /* SceneDelegate.swift */; };
 		EED39204244344A400A00077 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED39202244344A400A00077 /* Main.storyboard */; };
@@ -35,6 +41,9 @@
 		EE1A6F4E244398FF00C3A946 /* ReaderViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderViewControllerTest.swift; sourceTree = "<group>"; };
 		EE1A6F512443A11600C3A946 /* MockTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTimer.swift; sourceTree = "<group>"; };
 		EE1A6F532443B7C800C3A946 /* HomeViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTest.swift; sourceTree = "<group>"; };
+		EEA405FC2445B48000EC18D0 /* Bitter-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-Italic.ttf"; sourceTree = "<group>"; };
+		EEA405FD2445B48000EC18D0 /* Bitter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-Bold.ttf"; sourceTree = "<group>"; };
+		EEA405FE2445B48000EC18D0 /* Bitter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-Regular.ttf"; sourceTree = "<group>"; };
 		EED391F9244344A400A00077 /* Speed Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speed Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED391FC244344A400A00077 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EED391FE244344A400A00077 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +118,16 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		EEA405FB2445B41000EC18D0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EEA405FD2445B48000EC18D0 /* Bitter-Bold.ttf */,
+				EEA405FC2445B48000EC18D0 /* Bitter-Italic.ttf */,
+				EEA405FE2445B48000EC18D0 /* Bitter-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		EED391F0244344A400A00077 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +150,7 @@
 		EED391FB244344A400A00077 /* Speed Reader */ = {
 			isa = PBXGroup;
 			children = (
+				EEA405FB2445B41000EC18D0 /* Fonts */,
 				EE1A6F4A24438FF100C3A946 /* Delegates */,
 				EE1A6F4924438FE200C3A946 /* Storyboards */,
 				EE1A6F4824438FD500C3A946 /* Controllers */,
@@ -240,7 +260,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EED39209244344A600A00077 /* LaunchScreen.storyboard in Resources */,
+				EEA406012445B48000EC18D0 /* Bitter-Bold.ttf in Resources */,
 				EED39206244344A600A00077 /* Assets.xcassets in Resources */,
+				EEA406032445B48000EC18D0 /* Bitter-Regular.ttf in Resources */,
+				EEA405FF2445B48000EC18D0 /* Bitter-Italic.ttf in Resources */,
 				EED39204244344A400A00077 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +272,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA406042445B48000EC18D0 /* Bitter-Regular.ttf in Resources */,
+				EEA406002445B48000EC18D0 /* Bitter-Italic.ttf in Resources */,
+				EEA406022445B48000EC18D0 /* Bitter-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,6 +24,7 @@ class HomeViewController: UIViewController, UITextViewDelegate {
         let steppedWPMValue = round(wpmSlider.value / 50) * 50
         
         wpm = steppedWPMValue
+        
         wpmSliderLabel.text = String(format: "%gwpm", steppedWPMValue)
     }
     
@@ -59,17 +60,12 @@ class HomeViewController: UIViewController, UITextViewDelegate {
 
     func applyTextFieldStyles(){
         self.textToSpeedRead.delegate = self
-        self.textToSpeedRead.layer.cornerRadius = 10
         self.textToSpeedRead.clipsToBounds = true
-        self.textToSpeedRead.layer.borderWidth = 1
-        self.textToSpeedRead.layer.borderColor = UIColor(red:0.23, green:0.17, blue:0.26, alpha:1.00).cgColor
         self.textToSpeedRead.text = textToSpeedReadPlaceholder
         self.textToSpeedRead.textColor = UIColor.white
     }
     
     func applyReadyButtonStyles(){
-        readyButton.layer.borderWidth = 1
-        readyButton.layer.cornerRadius = 10
         readyButton.clipsToBounds = true
     }
 }
